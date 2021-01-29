@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fraunces font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <!-- Hachi Maru Pop -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600;1,700&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+
+    <!-- prism inclusion -->
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="prism.css">
+
+    <!-- Yusei Magic -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+
+
+    <!-- Css Style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Python Cheat Code</title>
+</head>
+<body>
+
+    <nav>
+        <span class="logo">
+            <a href="Home.html">
+                <img src="Logo.png" alt="">
+            </a>
+        </span>
+        <span class="nav-content">
+            <a href="Home.html" class="nav-link">
+                Home
+            </a>
+            <a href="Index.html" class="nav-link">
+                Index
+            </a>
+            <a href="aboutme.html" class="last nav-link">
+                About me
+            </a>
+            
+        </span>
+        <span class="content center">
+            Cheat Sheets By Aman
+        </span>
+    </nav>
+
+    <div class="one">
+        <p class="element" style="font-size: 40px !important;">
+            Python Cheat Sheet:
+        </p>
+        <ol class="element" style="padding-left: 15px;">
+
+            <!-- Variables -->
+            <li>
+                <p class="element">Variables:</p>
+                <p class="element-des">We use variables to temporarily store data in computer’s memory.</p>
+                <pre class="language-py"><code>price=1.0
+rating=4.9
+course_name=  ‘Python for Beginners’
+is_published = True</code></pre>
+                <p class="element-des">
+                    In the above example, <br>
+• <strong>price</strong> is an integer (a whole number without a decimal point) <br>
+• <strong>rating</strong> is a float (a number with a decimal point) <br>
+• <strong>course_name</strong> is a string (a sequence of characters) <br>
+• <strong>is_published</strong> is a boolean. Boolean values can be True or False.
+                </p>
+            </li>
+
+
+            <!-- Comments -->
+            <li>
+                <p class="element">Comments:</p>
+                <p class="element-des">We use comments to add notes to our code. Good comments explain the hows and 
+                    whys, not what the code does. That should be reflected in the code itself. Use 
+                    comments to add reminders to yourself or other developers, or also explain your 
+                    assumptions and the reasons you’ve written code in a certain way.</p>
+                <pre class="language-py"><code># This is a comment and it won’t get executed.
+# Our comments can be multiple lines.</code></pre>
+            </li>
+
+            <!-- Receiving Input -->
+            <li>
+                <p class="element">Receiving Input:</p>
+                <p class="element-des">We can receive input from the user by calling the <strong>input()</strong> function.</p>
+                <pre class="language-py"><code>birth_year = int(input(‘Birth year: ‘))</code></pre>
+                <p class="element-des">The <strong>input()</strong> function always returns data as a string. So, we’re converting the 
+                    result into an integer by calling the built-in <strong>int()</strong> function.</p>
+            </li>
+
+            <!-- Strings -->
+            <li>
+                <p class="element">Strings:</p>
+                <p class="element-des">We can define strings using single (‘ ‘) or double (“ “) quotes.</p>
+                <p class="element-des">To define a multi-line string, we surround our string with tripe quotes (“””).</p>
+                <p class="element-des">We can get individual characters in a string using square brackets [].</p>
+                <pre class="language-py"><code>course = ‘Python for Beginners’
+course[0] # returns the first character
+course[1] # returns the second character
+course[-1] # returns the first character from the end 
+course[-2] # returns the second character from the end</code></pre>
+                <p class="element-des">We can slice a string using a similar notation:</p>
+                <pre class="language-py"><code>course[1:5]</code></pre>
+                <p class="element-des">The above expression returns all the characters starting from the index position of 1 
+                    to 5 (but excluding 5). The result will be <strong>ytho</strong></p>
+                    <br>
+                    <p class="element-des">If we leave out the start index, 0 will be assumed.</p>
+                    <p class="element-des">If we leave out the end index, the length of the string will be assumed.</p>
+                    <br>
+                    <p class="element-des">We can use formatted strings to dynamically insert values into our strings:</p>
+                    <pre class="language-py"><code>name = ‘Mosh’ 
+message = f’Hi, my name is {name}’
+message.upper()                     # to convert to uppercase
+message.lower()                     # to convert to lowercase
+message.title()                     # to capitalize the first letter of every word
+message.find(‘p’)                   # returns the index of the first occurrence of p 
+(or -1 if not found) 
+message.replace(‘p’, ‘q’)</code></pre>
+                <p class="element-des">To check if a string contains a character (or a sequence of characters), we use the in 
+                    operator:</p>
+                <pre class="language-py"><code>contains = ‘Python’ in course</code></pre>
+            </li>
+
+            <!-- Arithmetic Operations -->
+            <li>
+                <p class="element">Arithmetic Operations:</p>
+                <pre class="language-py"><code>+       #plus operator
+-       #Subraction operator
+*       #Multiplication operator
+/       # returns a float
+//      # returns an int
+%       # returns the remainder of division
+**      # exponentiation - x ** y = x to the power of y</code></pre>
+                    <p class="element-des">Augmented assignment operator:</p>
+                    <pre class="language-py"><code>x = x + 10
+x += 10</code></pre>
+                    <p class="element-des">Operator precedence:</p>
+                    <ol style="font-size: 16px;">
+                        <li>Parenthesis</li>
+                        <li>Exponentiation</li>
+                        <li>Multiplication / Division</li>
+                        <li>Addition / Subtraction</li>
+                    </ol>
+            </li>
+
+            <!-- If Statements -->
+            <li>
+                <p class="element">If Statements:</p>
+                <pre class="language-py"><code>if is_hot:
+    print(“hot day”)
+elif is_cold:
+    print(“cold day”)
+else: 
+    print(“beautiful day”)</code></pre>
+            </li>
+
+            <!-- Logical operators: -->
+            <li>
+                <p class="element">Logical operators:</p>
+                <pre class="language-py"><code>if has_high_income and has_good_credit: 
+    ...
+if has_high_income or has_good_credit: 
+    ...
+is_day = True
+is_night = not is_day</code></pre>
+            </li>
+
+            <!-- Comparison operators -->
+            <li>
+                <p class="element">Comparison operators:</p>
+                <pre class="language-py"><code>a > b
+a >= b      #(greater than or equal to)
+a &lt b
+a &lt= b
+a == b      #(equals)
+a != b      #(not equals)</code></pre>
+            </li>
+
+
+            <!-- While loops -->
+            <li>
+                <p class="element">While loops:</p>
+                <pre class="language-py"><code>i = 1
+while i < 5:
+    print(i)
+    i += 1</code></pre>
+            </li>
+
+            <!-- For loops -->
+            <li>
+                <p class="element">For loops:</p>
+                <pre class="language-py"><code>for i in range(1, 5): 
+    print(i)</code></pre>
+                <p class="element-des"><strong>range(5):</strong> Generates 0, 1, 2, 3, 4</p>
+                <p class="element-des"><strong>range(1,5):</strong> Generates 1, 2, 3, 4</p>
+                <p class="element-des"><strong>range(1,5,2):</strong> Generates 1, 3</p>
+            </li>
+
+
+            <!-- Lists -->
+            <li>
+                <p class="element">Lists:</p>
+                <pre class="language-py"><code>numbers = [1, 2, 3, 4, 5]
+numbers[0]              # returns the first item 
+numbers[1]              # returns the second item
+numbers[-1]             # returns the first item from the end
+numbers[-2]             # returns the second item from the end 
+numbers.append(6)       # adds 6 to the end
+numbers.insert(0, 6)    # adds 6 at index position of 0
+numbers.remove(6)       # removes 6
+numbers.pop()           # removes the last item
+numbers.clear()         # removes all the items
+numbers.index(8)        # returns the index of first occurrence of 8
+numbers.sort()          # sorts the list
+numbers.reverse()       # reverses the list
+numbers.copy()          # returns a copy of the list</code></pre>
+            </li>
+
+
+            <!-- Tuples -->
+            <li>
+                <p class="element">Tuples:</p>
+                <p class="element-des">They are like read-only lists. We use them to store a list of items. But once we 
+                    define a tuple, we cannot add or remove items or change the existing items.</p>
+                <pre class="language-py"><code>coordinates = (1, 2, 3)</code></pre>
+                <p class="element-des">We can unpack a list or a tuple into separate variables:</p>
+                <pre class="language-py"><code>x, y, z = coordinates</code></pre>
+            </li>
+
+            <!-- Dictionaries -->
+            <li>
+                <p class="element">Dictionaries:</p>
+                <p class="element-des">We use dictionaries to store key/value pairs.</p>
+                <pre class="language-py"><code>customer = {
+    “name”: “John Smith”,
+    “age”: 30,
+    “is_verified”: True
+}</code></pre>
+                <p class="element-des">We can use strings or numbers to define keys. They should be unique. We can use 
+                    any types for the values.
+                </p>
+                <pre class="language-des"><code>customer[“name”]                    # returns “John Smith”
+customer[“type”]                    # throws an error 
+customer.get(“type”, “silver”)      # returns “silver”
+customer[“name”] = “new name”</code></pre>
+            </li>
+
+
+            <!-- Functions -->
+            <li>
+                <p class="element">Functions:</p>
+                <p class="element-des">We use functions to break up our code into small chunks. These chunks are easier 
+                    to read, understand and maintain. If there are bugs, it’s easier to find bugs in a 
+                    small chunk than the entire program. We can also re-use these chunks.</p>
+                <pre class="language-py"><code>def greet_user(name): 
+    print(f”Hi {name}”) 
+
+greet_user(“John”)</code></pre>
+                <p class="element-des"><strong>Parameters</strong> are placeholders for the data we can pass to functions. <strong>Arguments</strong>
+                    are the actual values we pass.</p>
+                <br>
+                <p class="element-des">We have two types of arguments:
+                    <ul class="element-des" style="padding-left: 30px;">
+                        <li>Positional arguments: their position (order) matters.</li>
+                        <li>Keyword arguments: position doesn’t matter - we prefix them with the parameter 
+                            name.</li>
+                    </ul>
+                </p>
+                <pre class="language-py"><code># Two positional arguments
+greet_user(“John”, “Smith”)</code></pre>
+                <pre class="language-py"><code># Keyword arguments
+calculate_total(order=50, shipping=5, tax=0.1)</code></pre>
+                <p class="element-des">Our functions can return values. If we don’t use the return statement, by default 
+                    None is returned. None is an object that represents the absence of a value.</p>
+                <pre class="language-py"><code>def square(number): 
+    return number * number 
+
+result = square(2)
+print(result)               # prints 4</code></pre>
+            </li>
+
+
+            <!-- Exceptions -->
+            <li>
+                <p class="element">Exceptions:</p>
+                <p class="element-des">Exceptions are errors that crash our programs. They often happen because of bad 
+                    input or programming errors. It’s our job to anticipate and handle these exceptions 
+                    to prevent our programs from cashing.</p>
+                <pre class="language-py"><code>try: 
+    age = int(input(‘Age: ‘))
+    income = 20000
+    risk = income / age 
+    print(age)
+
+except ValueError:
+    print(‘Not a valid number’)
+
+except ZeroDivisionError:
+    print(‘Age cannot be 0’)</code></pre>
+            </li>
+
+            <!-- Classes -->
+            <li>
+                <p class="element">Classes:</p>
+                <p class="element-des">We use classes to define new types.</p>
+                <pre class="language-py"><code>class Point: 
+def __init__(self, x, y): 
+    self.x = x
+    self.y = y 
+def move(self): 
+    print(“move”)</code></pre>
+                <p class="element-des">When a function is part of a class, we refer to it as a method. </p>
+                <p class="element-des">Classes define templates or blueprints for creating objects. An object is an instance 
+                    of a class. Every time we create a new instance, that instance follows the structure 
+                    we define using the class.</p>
+                    <pre class="language-py"><code>point1 = Point(10, 5)
+point2 = Point(2, 4)</code></pre>
+                <p class="element-des">__init__ is a special method called constructor. It gets called at the time of 
+                    creating new objects. We use it to initialize our objects.</p>
+            </li>
+
+
+            <!-- Inheritance -->
+            <li>
+                <p class="element">Inheritance:</p>
+                <p class="element-des">Inheritance is a technique to remove code duplication. We can create a base class 
+                    to define the common methods and then have other classes inherit these methods.</p>
+                <pre class="language-py"><code>class Mammal: 
+    def walk(self): 
+        print(“walk”)
+
+class Dog(Mammal): 
+    def bark(self): 
+        print(“bark”)
+    
+dog = Dog()
+dog.walk()      # inherited from Mammal
+dog.bark()      # defined in Dog</code></pre>
+            </li>
+
+
+            <!-- Modules -->
+            <li>
+                <p class="element">Modules:</p>
+                <p class="element-des">A module is a file with some Python code. We use modules to break up our 
+                    program into multiple files. This way, our code will be better organized. We won’t 
+                    have one gigantic file with a million lines of code in it!</p>
+                <p class="element-des">There are 2 ways to import modules: we can import the entire module, or specific 
+                    objects in a module.</p>
+                <pre class="language-py"><code># importing the entire converters module
+import converters
+converters.kg_to_lbs(5)
+# importing one function in the converters module
+from converters import kg_to_lbs
+kg_to_lbs(5)</code></pre>
+            </li>
+            
+
+            <!-- Packages -->
+            <li>
+                <p class="element">Packages:</p>
+                <p class="element-des">A package is a directory with <strong>__init__.py</strong> in it. It can contain one or more 
+                    modules</p>
+                <pre class="language-py"><code># importing the entire sales module 
+from ecommerce import sales
+sales.calc_shipping()
+
+# importing one function in the sales module
+from ecommerce.sales import calc_shipping
+calc_shipping()</code></pre>
+            </li>
+
+
+            <!-- Python Standard Library -->
+            <li>
+                <p class="element">Python Standard Library:</p>
+                <p class="element-des">Python comes with a huge library of modules for performing common tasks such as 
+                    sending emails, working with date/time, generating random values, etc.</p>
+                <p class="element-des"><strong>Random Module:</strong></p>
+                <pre class="language-py"><code>import random 
+random.random()                         # returns a float between 0 to 1
+random.randint(1, 6)                    # returns an int between 1 to 6 
+members = [‘John’, ‘Bob’, ‘Mary’]
+leader = random.choice(members)         # randomly picks an item</code></pre>
+            </li>
+
+
+            <!-- Pypi -->
+            <li>
+                <p class="element">Pypi:</p>
+                <p class="element-des">Python Package Index (pypi.org) is a directory of Python packages published by 
+                    Python developers around the world. We use pip to install or uninstall these 
+                    packages.</p>
+                <pre class="language-py"><code>pip install openpyxl
+
+pip uninstall openpyxl</code></pre>
+            </li>
+
+        </ol>
+    </div>
+</body>
+</html>

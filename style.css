@@ -1,0 +1,176 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    text need to include roboto font
+
+    font-family: 'Roboto', sans-serif;
+ */
+/*
+    text need to include Hachi Maru Pop font
+
+    font-family: 'Hachi Maru Pop', cursive;
+ */
+/*
+    text need to include Fraunces font
+
+    font-family: 'Fraunces', serif;
+ */
+
+nav
+{
+    background-color: rgb(3, 4, 94);
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+.content
+{
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 40px;
+    padding-right: 170px;
+    font-style: oblique;
+}
+.center
+{
+    margin: auto;
+}
+.one>ol{
+    font-size: 25px;
+    padding-left: 5px;
+}
+.one
+{
+    height: 80%;
+    text-align: left;
+    background-color: rgba(0, 119, 182,0.2);
+    margin: auto;
+    width: 85%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border: solid 1px rgba(0, 119, 182,0.2);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.element
+{
+    font-size: 25px !important;
+    font-family: 'Yusei Magic', sans-serif;
+}
+.one p
+{
+    font-size: 20px;
+}
+.one h1
+{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.nav-link
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Hachi Maru Pop', cursive;
+    padding-right: 2px;
+    font-size: large;
+}
+#z
+{
+    font-family: 'Yusei Magic', sans-serif;
+    padding-top: 10px;
+}
+ol a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+ol
+{
+    margin-left: 35px;
+    padding-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+}
+.logo
+{
+    padding-left: 20px;
+    
+}
+.logo img
+{
+    width: 80px;
+    padding-right: 10px;
+
+}
+pre[class*="language-"]
+{
+    background-color: rgb(19, 17, 17) !important;
+    font-size: 16px !important;
+    margin-right: 10px !important;
+    border-radius: 16px;
+}
+.toolbar-item button
+{
+    cursor: pointer !important;
+    color: greenyellow !important;
+    margin-right: 10px !important;
+    font-size: 18px !important;
+    background-color: rgb(19, 17, 17) !important;
+    padding: 8px !important;
+    border: solid 2px greenyellow !important; 
+}
+.boiler
+{
+    padding-left: revert;
+}
+.boiler li
+{
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.ul
+{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-weight: normal !important;
+}
+.a li
+{
+    padding-top: 12px;
+}
+
+.element-des
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px !important;
+}
+.index>h3
+{
+    margin-top: 1em;
+    padding-left: 8px;
+    font-size: 23px;
+}
+
+.index ol
+{
+    padding-left: 30px;
+}
+.index_itms li,li a
+{
+    font-size: 20px;
+}
+
+.index li>a:hover
+{
+    background-color:mediumblue; 
+    font-family: 'Hachi Maru Pop', cursive;
+    color:white;
+}
